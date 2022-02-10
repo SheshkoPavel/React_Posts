@@ -1,23 +1,23 @@
-import Counter from "./components/Counter";
-import ClassCounter from "./components/ClassCounter";
+import "./styles/App.css";
+import React from "react";
+import {BrowserRouter, Link, Route, Routes, Switch} from "react-router-dom";
+import About from "./pages/About";
+import Posts from "./pages/Posts";
+import Navbar from "./components/UI/Navbar/Navbar";
+import Error from "./pages/Error";
+import AppRouter from "./components/AppRouter";
+
 
 function App() {
+return (
+    <BrowserRouter>
+        <Navbar/>
+        <AppRouter/>
+    </BrowserRouter>
 
-  // const [likes, setLikes] = useState(5)
-  // const [value, setValue] = useState('ТЕКСТ В ИНПУТЕ')
+)
 
-  return (
-    <div className="App">
-        Это функциональные компоненты
-      <Counter/>
-      <Counter/>
 
-       <br/>
-        Это классовый компонент
-      <ClassCounter/>
-
-    </div>
-  );
 }
 
 export default App;
