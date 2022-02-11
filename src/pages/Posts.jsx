@@ -65,8 +65,8 @@ function Posts() {
 
     return (
         <div className="App">
-            Это функциональные компоненты
-            <Counter/>
+            Это функциональные компоненты <br/><br/>
+            <Counter/> <br/>
             <Counter/>
 
             <br/>
